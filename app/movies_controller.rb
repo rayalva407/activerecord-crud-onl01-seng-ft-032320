@@ -28,7 +28,7 @@ def can_be_created_in_a_block(args = {title: "Home Alone", release_date: 1990})
   # title == "Home Alone"
   # release_date == 1990
   
-  Movie.create({title: "Home Alone", release_date: 1990})
+  Movie.create(title: args[:title], release_date: args[:release_date])
 end
 
 def can_get_the_first_item_in_the_database
